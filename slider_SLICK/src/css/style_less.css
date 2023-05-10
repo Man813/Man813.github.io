@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'MuseoSansBold';
+  src: url('../fonts/MuseoSansBold.eot');
+  src: url('../fonts/MuseoSansBold.eot') format('embedded-opentype'), url('../fonts/MuseoSansBold.woff2') format('woff2'), url('../fonts/MuseoSansBold.woff') format('woff'), url('../fonts/MuseoSansBold.ttf') format('truetype'), url('../fonts/MuseoSansBold.svg#MuseoSansBold') format('svg');
+}
+input,
+button,
+a {
+  outline: none;
+  text-decoration: none;
+}
+.features {
+  padding-top: 10rem;
+}
+.section-header {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 10rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+.features-block {
+  text-align: center;
+}
+.features-block h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.features-block h3 p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+.features-img {
+  height: 6rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.preview {
+  position: absolute;
+  z-index: 99;
+  top: 50%;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border: none;
+}
+.prev_1 {
+  left: 0;
+  background: url(../img/arrows/LeftArrow_1.svg) center no-repeat;
+  background-size: 60%;
+}
+.next_1 {
+  right: 0;
+  background: url(../img/arrows/RightArrow_1.svg) center no-repeat;
+  background-size: 60%;
+}

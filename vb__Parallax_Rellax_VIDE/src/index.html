@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!--bootstrap files-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.2.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">  <!--bootstrap адаптив под CSS-->
+  <link rel="stylesheet" href="css/bootstrap/2.0_bootstrap.css"> <!--css/bootstrap-->
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="js/bootstrap/bootstrap.js"> <!--js/bootstrap-->
+  <link rel="stylesheet" href="js/bootstrap/bootstrap.min.js">
+  
+  <!--MAINS-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_less.css">
+  
+  <!--fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <!--animations-->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  
+  <title>bg: Parallax,Rellax</title>
+</head>
+
+
+<body>
+ 
+ <main>
+  <section>
+   <img class="rellax" data-rellax-speed="7" src="img/Clients/client_2.png" alt="">
+   <img class="rellax" data-rellax-speed="1" src="img/Clients/client_3.png" alt="">
+   <img class="rellax" data-rellax-speed="-6" src="img/Clients/client_4.png" alt="">
+  </section>
+  <section class="empty1"><h1 style="text-align: center; margin-top: -6rem;">SCROLL DOWN</h1></section>
+  <section class="parallax-window" data-parallax="scroll" data-image-src="img/МАКЕТ.jpg"></section>
+  <section class="video1" data-vide-bg="video/coverr1"><p style="text-align: center;">I love you!</p></section>
+  <section class="parallax-window" data-parallax="scroll" data-speed="-0.8" data-image-src="img/МАКЕТ.jpg"></section>
+  <section class="empty2"></section>
+  
+  
+ </main>
+ <!------------------ *СЛАЙДЕРЫ: ----------------------->
+ <!----------- slider: SLICK -------------->
+ <!-- <div class="MY_CLASS">
+  ПРИМЕР: в файле "SLICK"
+ </div> -->
+ <!----------- slider: FOTORAMA ----------->
+ <!-- <div class="fotorama" data-width="100%" data-height="200" data-allowfullscreen="true" data-nav="thumbs" data-navposition="top" data-loop="true" data-autoplay="4300" data-keyboard="true" data-keyboard='{"up": true, "down": true, "space": true}'>
+  <img src="img/МАКЕТ.jpg" alt="...">
+  <img src="img/002.png" alt="...">
+  <img src="img/Clients/client_1.png" alt="...">
+ </div> -->
+ 
+ <!------------------- *АНИМАЦИИ ----------------------->
+ <!----------- animation: https://animate.style/ -->
+ <!-- <div class="anim1 animate__animated wow animate__ТВОЯ АНИМАЦИЯ С САЙТА https://animate.style" ><p>текст</p></div> -->
+ 
+ <!------------------- *BACKGROUND'S: VIDE ------------->
+ <!----- vide: http://vodkabears.github.io/vide/ -->
+ <!-- <section class="bg1" data-vide-bg="video/coverr1"></section> -->
+
+ <!------------------- *BACKGROUND'S: PARALLAX --------->
+ <!-- parallax: https://pixelcog.github.io/parallax.js -->
+ <!-- <section class="parallax-window" data-parallax="scroll" data-speed="-0.8" data-image-src="img/МАКЕТ.jpg"></section> -->
+ <!------------------- *BACKGROUND'S: RELLAX --------->
+ <!-- parallax: https://github.com/dixonandmoe/rellax -->
+ <!-- <img class="rellax" data-rellax-speed="-6" src="img/Clients/client_4.png" alt=""> -->
+ 
+ 
+ <!--------------------------------------------------------------------------------------------------------------------------->
+ 
+ <!-- JQuery - скрипт для JS ---------------------------------------------------------------------------------->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+ <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.12.4.min.js"></script>
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+
+ <!------- animation functions: wowJS ------------------------------------------------------------------------->
+ <script src="js/wow.js"></script>
+ <script src="js/wow.min.js"></script>
+ <script> new WOW().init(); </script>
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ 
+ <!-- slider: SLICK -----------------------------------------------------***--------------------------------------->
+  <!--стили-->
+ <link rel="stylesheet" href="slick/slick.css">
+ <link rel="stylesheet" href="slick/slick-theme.css">
+  <!--сама библиотека-->
+ <script src="slick/slick.min.js"></script>
+  <!--присвоение класса под слайдер-->
+ <script> $(document).ready(function(){$(  '.MY_CLASS'  ).slick({  Infinite: false, slidesToShow: 4, slidesToScroll: 1, speed: 300,     responsive: [{breakpoint: 1024, settings: {slidesToShow: 3, slidesToScroll: 3, infinite: true, prevArrow: '<button class="prev_1 preview"></button>', nextArrow: '<button class="next_1 preview"></button>'} },       {breakpoint: 767, settings: {slidesToShow: 2, slidesToScroll: 2, infinite: true, prevArrow: '<button class="prev_1 preview"></button>', nextArrow: '<button class="next_1 preview"></button>'}},       {breakpoint: 465, settings: {slidesToShow: 1, slidesToScroll: 1, infinite: true, prevArrow: '<button class="prev_1 preview"></button>', nextArrow: '<button class="next_1 preview"></button>'}       } ]  }); }); </script>
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ <!-- slider: FOTORAMA ---------------------------------------------------------------------------------------->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ <!-- window: JQuery Script ---------------------------------------------***----------------------------------->
+ <script>
+  $(document).ready(function(){
+   $('.popup-btn_open').on('click', function(event){ //<- кнопка(button такого-то класс."on[module: jQuery Code Snippets]"(по клику)
+    event.preventDefault();
+    $('.popup').fadeIn(); //<- вся оболочка(div такого-то класс).Появление
+   });
+   $('.popup-btn_close').on('click', function(event){ //<- кнопка(button такого-то класс."on[module: jQuery Code Snippets]"(по клику)
+    event.preventDefault();
+    $('.popup').fadeOut(); //<- вся оболочка(div такого-то класс).Затухание
+   });
+  });
+ </script>
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ <!-- window: magnific-popup ---------------------------------------------------------------------------------->
+ <link rel="stylesheet" href="magnific-popup/magnific-popup.css">  <!-- Magnific Popup core CSS file -->
+ <script src="js/jquery.magnific-popup.min.js"></script>  <!-- Magnific Popup core JS file -->
+ <script> $(document).ready(function(){ $(  '.my_image-link'  ).magnificPopup({  type:'image'  }) }); </script>  <!-- Initializing popup -->
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ <!-- background: vide ---------------------------------------------------------------------------------------->
+ <script src="js/jquery.vide.js"></script>
+ <script src="js/jquery.vide.min.js"></script>      <!-- https://github.com/vodkabears/Vide-->  <!-- https://coverr.co -->
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ <!-- background: parallax ------------------------------------------------------------------------------------>
+ <script src="js/parallax.js"></script>
+ <script src="js/parallax.min.js"></script>      <!--https://pixelcog.github.io/parallax.js-->
+ <!------------------------------------------------------------------------------------------------------------>
+ <!-- background: rellax -------------------------------------------------------------------------------------->
+ <script src="js/rellax.js"></script>
+ <script src="js/rellax.min.js"></script>      <!--https://github.com/dixonandmoe/rellax-->
+ <script> var rellax = new Rellax('.rellax'); </script>
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+ 
+ <!-- Bootstrap адаптив под JS для готовых работ с getbootstrap.com ------------------------------------------->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>  <!-- -> скопировано из https://www.bootstrapcdn.com/ - CSS:JavaScript -->
+ <!------------------------------------------------------------------------------------------------------------>
+ 
+</body>
+</html>
